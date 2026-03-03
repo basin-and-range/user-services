@@ -11,7 +11,7 @@ paths:
       summary: Latest
       responses:
         '200':
-          description: Untitled Example
+          description: The example
           content:
             application/json:
               schema:
