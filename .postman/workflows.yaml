@@ -8,6 +8,6 @@ workflows:
     - spec: ../index.yaml
       collection: ../postman/collections/NOVA New User Onboarding
       options:
-        syncExamples: false
+        syncExamples: true
         folderStrategy: Tags
         nestedFolderHierarchy: true
