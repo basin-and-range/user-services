@@ -1,11 +1,11 @@
-name: Postman collection tests
+name: Lint accounts-service spec
 
 on:
   push:
   pull_request:
 
 jobs:
-  run-postman-collection:
+  lint-spec:
     runs-on: ubuntu-latest
 
     steps:
@@ -29,7 +29,7 @@ jobs:
           fi
           postman login --with-api-key "${POSTMAN_API_KEY}"
 
-      - name: Run collection (filesystem mode)
+      - name: lint spec (filesystem mode)
         shell: bash
         run: |
-          postman collection lint "index.yaml"
+          postman spec lint "index.yaml"
