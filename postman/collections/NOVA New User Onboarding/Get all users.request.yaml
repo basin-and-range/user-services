@@ -1,6 +1,5 @@
 $kind: http-request
-description: Get all users in the system.
-url: "{{baseUrl}}/get?all=true"
+url: "{{baseUrl}}:/get?all=true#"
 method: GET
 headers:
   - key: key
@@ -13,4 +12,4 @@ queryParams:
     value: "true"
     description: "(Required) "
 examples: ./.resources/Get all users.resources/examples
-order: 4000
+order: 2000

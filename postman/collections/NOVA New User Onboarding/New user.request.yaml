@@ -1,6 +1,4 @@
 $kind: http-request
-description: Creates a new user in the system. The user will be assigned an ID
-  automatically. This can be found in the response.
 url: "{{baseUrl}}/create"
 method: POST
 headers:
@@ -16,4 +14,4 @@ body:
       value: Klein
       description: (Required) The user's last name (required)
 examples: ./.resources/New user.resources/examples
-order: 3000
+order: 1000

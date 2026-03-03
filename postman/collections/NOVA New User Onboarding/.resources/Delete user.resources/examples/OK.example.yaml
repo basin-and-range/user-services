@@ -1,6 +1,6 @@
 $kind: http-example
 request:
-  url: "{{baseUrl}}/delete?id={{id}}"
+  url: "{{baseUrl}}:/delete?id={{id}}#"
   method: DELETE
   headers:
     - key: Content-Type

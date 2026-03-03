@@ -1,6 +1,6 @@
 $kind: http-example
 request:
-  url: "{{baseUrl}}/update?id={{id}}"
+  url: "{{baseUrl}}:/update?id={{id}}#"
   method: PUT
   headers:
     - key: Content-Type

@@ -10,6 +10,9 @@ cloudResources:
     ../postman/collections/NOVA New User Onboarding: 23889826-74f02a56-01e0-4d8d-a4ba-d1e2b6e00e65
   specs:
     ../index.yaml: 8e66f2d8-8533-4d84-af03-092a274ecd53
+  environments:
+    ../postman/environments/Prod 1.environment.yaml: 35f0557f-4745-4297-8e27-6776e600106e
+    ../postman/environments/Prod.environment.yaml: 47051857-35f0557f-4745-4297-8e27-6776e600106e
 
 localResources:
   specs:

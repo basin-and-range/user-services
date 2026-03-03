@@ -1,6 +1,0 @@
-$kind: http-request
-url: "{{baseUrl}}/update?id={{id}}"
-method: PATCH
-queryParams:
-  id: "{{id}}"
-order: 4000

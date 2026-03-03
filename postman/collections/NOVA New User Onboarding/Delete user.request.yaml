@@ -1,6 +1,5 @@
 $kind: http-request
-description: Deletes a user from the system by `id`.
-url: "{{baseUrl}}/delete?id={{id}}"
+url: "{{baseUrl}}:/delete?id={{id}}#"
 method: DELETE
 headers:
   Accept: application/json; charset=utf-8
@@ -9,4 +8,4 @@ queryParams:
     value: "{{id}}"
     description: (Required) The user's ID
 examples: ./.resources/Delete user.resources/examples
-order: 6000
+order: 4000

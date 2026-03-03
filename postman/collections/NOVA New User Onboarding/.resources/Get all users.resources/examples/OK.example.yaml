@@ -1,6 +1,6 @@
 $kind: http-example
 request:
-  url: "{{baseUrl}}/get?all=true"
+  url: "{{baseUrl}}:/get?all=true#"
   method: GET
   headers:
     - key: key
