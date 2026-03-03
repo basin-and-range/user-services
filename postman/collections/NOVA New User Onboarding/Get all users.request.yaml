@@ -1,0 +1,16 @@
+$kind: http-request
+description: Get all users in the system.
+url: "{{baseUrl}}/get?all=true"
+method: GET
+headers:
+  - key: key
+    value: "{{key}}"
+    description: "(Required) "
+  - key: Accept
+    value: application/json; charset=utf-8
+queryParams:
+  - key: all
+    value: "true"
+    description: "(Required) "
+examples: ./.resources/Get all users.resources/examples
+order: 4000

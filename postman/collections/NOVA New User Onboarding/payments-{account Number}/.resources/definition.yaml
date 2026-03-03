@@ -1,0 +1,3 @@
+$kind: collection
+name: payments/{account Number}
+order: 2000

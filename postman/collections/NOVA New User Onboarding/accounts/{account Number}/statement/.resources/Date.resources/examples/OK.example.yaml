@@ -1,0 +1,76 @@
+$kind: http-example
+request:
+  url: "{{baseUrl}}/accounts/:accountNumber/statement/date"
+  method: GET
+  pathVariables:
+    - key: accountNumber
+      value: do pariatur fugiat esse
+      description: "(Required) "
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    Date: ""
+    Transfer-Encoding: ""
+    Connection: ""
+    Server: ""
+    x-srv-trace: ""
+    x-srv-span: ""
+    Access-Control-Allow-Origin: ""
+    X-RateLimit-Limit: ""
+    X-RateLimit-Remaining: ""
+    X-RateLimit-Reset: ""
+    ETag: ""
+    Vary: ""
+    Content-Encoding: ""
+    Content-Type: application/json; charset=utf-8
+  body:
+    type: json
+    content: '"{\n    \"period\": {\n        \"from\": \"Mon Sep 20 2021 16:52:45
+      GMT-0400 (Eastern Daylight Time)\",\n        \"to\": \"Tue Nov 02 2021
+      15:13:01 GMT-0400 (Eastern Daylight Time)\"\n    },\n    \"balance\":
+      {\n        \"opening\": 852.93,\n        \"closing\":
+      659.37\n    },\n    \"money\": {\n        \"in\":
+      162.03,\n        \"out\": 416.14\n    },\n    \"transactions\":
+      [\n        {\n            \"date\": \"Mon Nov 01 2021 21:22:46 GMT-0400
+      (Eastern Daylight Time)\",\n            \"description\": \"Rutherford,
+      Kuhn and Davis\",\n            \"type\":
+      \"payment\",\n            \"amount\": 550.45,\n            \"balance\":
+      812.41\n        },\n        {\n            \"date\": \"Tue Nov 02 2021
+      17:54:35 GMT-0400 (Eastern Daylight Time)\",\n            \"description\":
+      \"Steuber, Bosco and Aufderhar\",\n            \"type\":
+      \"withdrawal\",\n            \"amount\": 352.28,\n            \"balance\":
+      805.94\n        },\n        {\n            \"date\": \"Tue Nov 02 2021
+      00:32:22 GMT-0400 (Eastern Daylight Time)\",\n            \"description\":
+      \"Murray, Lind and Conn\",\n            \"type\":
+      \"withdrawal\",\n            \"amount\": 750.29,\n            \"balance\":
+      380.53\n        },\n        {\n            \"date\": \"Tue Nov 02 2021
+      16:08:41 GMT-0400 (Eastern Daylight Time)\",\n            \"description\":
+      \"Ortiz - Strosin\",\n            \"type\":
+      \"withdrawal\",\n            \"amount\": 907.48,\n            \"balance\":
+      911.39\n        },\n        {\n            \"date\": \"Tue Nov 02 2021
+      01:54:43 GMT-0400 (Eastern Daylight Time)\",\n            \"description\":
+      \"Lockman - Abbott\",\n            \"type\":
+      \"withdrawal\",\n            \"amount\": 488.83,\n            \"balance\":
+      27.05\n        },\n        {\n            \"date\": \"Tue Nov 02 2021
+      20:56:06 GMT-0400 (Eastern Daylight Time)\",\n            \"description\":
+      \"Thiel, Labadie and Fay\",\n            \"type\":
+      \"withdrawal\",\n            \"amount\": 699.06,\n            \"balance\":
+      494.85\n        },\n        {\n            \"date\": \"Tue Nov 02 2021
+      01:03:02 GMT-0400 (Eastern Daylight Time)\",\n            \"description\":
+      \"Mosciski - Rutherford\",\n            \"type\":
+      \"invoice\",\n            \"amount\": 709.30,\n            \"balance\":
+      280.79\n        },\n        {\n            \"date\": \"Tue Nov 02 2021
+      06:03:08 GMT-0400 (Eastern Daylight Time)\",\n            \"description\":
+      \"Gaylord and Sons\",\n            \"type\":
+      \"deposit\",\n            \"amount\": 948.75,\n            \"balance\":
+      410.76\n        },\n        {\n            \"date\": \"Tue Nov 02 2021
+      11:01:22 GMT-0400 (Eastern Daylight Time)\",\n            \"description\":
+      \"Heaney LLC\",\n            \"type\":
+      \"withdrawal\",\n            \"amount\": 226.07,\n            \"balance\":
+      562.89\n        },\n        {\n            \"date\": \"Tue Nov 02 2021
+      05:15:39 GMT-0400 (Eastern Daylight Time)\",\n            \"description\":
+      \"Torphy Inc\",\n            \"type\":
+      \"payment\",\n            \"amount\": 848.31,\n            \"balance\":
+      402.62\n        }\n    ]\n}"'
+order: 1000

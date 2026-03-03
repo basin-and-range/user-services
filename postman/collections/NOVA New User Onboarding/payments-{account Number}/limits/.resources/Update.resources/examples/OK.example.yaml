@@ -1,0 +1,26 @@
+$kind: http-example
+request:
+  url: "{{baseUrl}}/payments/:accountNumber/limits"
+  method: PUT
+  pathVariables:
+    - key: accountNumber
+      value: do pariatur fugiat esse
+      description: "(Required) "
+  body:
+    type: json
+    content: |-
+      {
+        "daily": 30000
+      }
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    Content-Type: application/json
+  body:
+    type: json
+    content: |-
+      {
+        "status": "success"
+      }
+order: 1000

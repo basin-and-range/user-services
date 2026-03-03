@@ -1,0 +1,16 @@
+$kind: http-request
+url: "{{baseUrl}}/payments/:accountNumber/payees/add"
+method: POST
+headers:
+  Content-Type: text/plain
+  Accept: application/json
+pathVariables:
+  - key: accountNumber
+    value: do pariatur fugiat esse
+    description: "(Required) "
+body:
+  type: text
+  content: '"{\n    \"name\": \"Andrea Harber\",\n    \"checking\":
+    63436544,\n    \"routing\": 67511746\n}"'
+examples: ./.resources/Add.resources/examples
+order: 2000

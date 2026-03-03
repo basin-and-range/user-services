@@ -1,0 +1,21 @@
+$kind: http-request
+url: "{{baseUrl}}/payments/:accountNumber/transfer"
+method: POST
+headers:
+  Content-Type: application/json
+  Accept: application/json
+pathVariables:
+  - key: accountNumber
+    value: do pariatur fugiat esse
+    description: "(Required) "
+body:
+  type: json
+  content: |-
+    {
+      "payeeId": "eea58966-aff3-4631-aefe-a6247b4be10d",
+      "amount": "184.92",
+      "reference": "Aut id aliquid.",
+      "date": "Mon Nov 01 2021 23:21:49 GMT-0400 (Eastern Daylight Time)"
+    }
+examples: ./.resources/Transfer.resources/examples
+order: 3000

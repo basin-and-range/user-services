@@ -1,0 +1,3 @@
+$kind: collection
+description: Requests related to getting a single user by their userId.
+order: 1000

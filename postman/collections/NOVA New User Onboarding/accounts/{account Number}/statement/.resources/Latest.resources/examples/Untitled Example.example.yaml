@@ -1,0 +1,61 @@
+$kind: http-example
+request:
+  url: "{{baseUrl}}/accounts/:accountNumber/statement/latest"
+  method: GET
+  pathVariables:
+    - key: accountNumber
+      value: do pariatur fugiat esse
+      description: "(Required) "
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    Content-Type: application/json
+  body:
+    type: json
+    content: '"{\n    \"period\": \"latest\",\n    \"balance\":
+      {\n        \"opening\": 592.00,\n        \"closing\":
+      850.86\n    },\n    \"money\": {\n        \"in\":
+      738.29,\n        \"out\": 166.95\n    },\n    \"transactions\":
+      [\n        {\n            \"date\": \"Tue Nov 02 2021 03:12:59 GMT-0400
+      (Eastern Daylight Time)\",\n            \"description\": \"Schroeder
+      LLC\",\n            \"type\": \"invoice\",\n            \"amount\":
+      472.23,\n            \"balance\":
+      975.82\n        },\n        {\n            \"date\": \"Tue Nov 02 2021
+      07:25:47 GMT-0400 (Eastern Daylight Time)\",\n            \"description\":
+      \"Douglas LLC\",\n            \"type\":
+      \"withdrawal\",\n            \"amount\": 579.54,\n            \"balance\":
+      478.19\n        },\n        {\n            \"date\": \"Tue Nov 02 2021
+      03:15:25 GMT-0400 (Eastern Daylight Time)\",\n            \"description\":
+      \"Schimmel, Veum and Ernser\",\n            \"type\":
+      \"payment\",\n            \"amount\": 183.96,\n            \"balance\":
+      930.73\n        },\n        {\n            \"date\": \"Tue Nov 02 2021
+      10:23:17 GMT-0400 (Eastern Daylight Time)\",\n            \"description\":
+      \"Haley, Gislason and Yundt\",\n            \"type\":
+      \"invoice\",\n            \"amount\": 41.48,\n            \"balance\":
+      725.33\n        },\n        {\n            \"date\": \"Mon Nov 01 2021
+      22:39:10 GMT-0400 (Eastern Daylight Time)\",\n            \"description\":
+      \"Harris, Hegmann and Sawayn\",\n            \"type\":
+      \"deposit\",\n            \"amount\": 879.64,\n            \"balance\":
+      646.98\n        },\n        {\n            \"date\": \"Tue Nov 02 2021
+      01:31:45 GMT-0400 (Eastern Daylight Time)\",\n            \"description\":
+      \"Jacobson, Monahan and Roberts\",\n            \"type\":
+      \"withdrawal\",\n            \"amount\": 582.72,\n            \"balance\":
+      849.03\n        },\n        {\n            \"date\": \"Tue Nov 02 2021
+      19:06:42 GMT-0400 (Eastern Daylight Time)\",\n            \"description\":
+      \"Vandervort Group\",\n            \"type\":
+      \"invoice\",\n            \"amount\": 12.65,\n            \"balance\":
+      522.66\n        },\n        {\n            \"date\": \"Tue Nov 02 2021
+      03:08:30 GMT-0400 (Eastern Daylight Time)\",\n            \"description\":
+      \"Smitham LLC\",\n            \"type\":
+      \"withdrawal\",\n            \"amount\": 279.13,\n            \"balance\":
+      781.56\n        },\n        {\n            \"date\": \"Tue Nov 02 2021
+      03:46:15 GMT-0400 (Eastern Daylight Time)\",\n            \"description\":
+      \"Moore LLC\",\n            \"type\":
+      \"withdrawal\",\n            \"amount\": 723.63,\n            \"balance\":
+      544.53\n        },\n        {\n            \"date\": \"Tue Nov 02 2021
+      04:53:24 GMT-0400 (Eastern Daylight Time)\",\n            \"description\":
+      \"Predovic - Ferry\",\n            \"type\":
+      \"invoice\",\n            \"amount\": 673.55,\n            \"balance\":
+      638.57\n        }\n    ]\n}"'
+order: 1000

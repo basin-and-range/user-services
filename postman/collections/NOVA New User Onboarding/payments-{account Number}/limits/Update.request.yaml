@@ -1,0 +1,18 @@
+$kind: http-request
+url: "{{baseUrl}}/payments/:accountNumber/limits"
+method: PUT
+headers:
+  Content-Type: application/json
+  Accept: application/json
+pathVariables:
+  - key: accountNumber
+    value: do pariatur fugiat esse
+    description: "(Required) "
+body:
+  type: json
+  content: |-
+    {
+      "daily": 30000
+    }
+examples: ./.resources/Update.resources/examples
+order: 2000

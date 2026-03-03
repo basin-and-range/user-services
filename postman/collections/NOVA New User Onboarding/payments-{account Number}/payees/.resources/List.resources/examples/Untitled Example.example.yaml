@@ -1,0 +1,37 @@
+$kind: http-example
+request:
+  url: "{{baseUrl}}/payments/:accountNumber/payees"
+  method: GET
+  pathVariables:
+    - key: accountNumber
+      value: do pariatur fugiat esse
+      description: "(Required) "
+response:
+  statusCode: 500
+  statusText: Internal Server Error
+  headers:
+    Content-Type: application/json
+  body:
+    type: json
+    content: '"[\n    {\n        \"name\": \"Alejandro
+      Reichert\",\n        \"checking\": 49519513,\n        \"routing\":
+      41858408\n    },\n    {\n        \"name\": \"Sandy
+      Funk\",\n        \"checking\": 89056703,\n        \"routing\":
+      49713129\n    },\n    {\n        \"name\": \"Aaron
+      Metz\",\n        \"checking\": 09806437,\n        \"routing\":
+      55100334\n    },\n    {\n        \"name\": \"Darrell
+      Bauch\",\n        \"checking\": 85125097,\n        \"routing\":
+      09173516\n    },\n    {\n        \"name\": \"Isaac
+      Feil\",\n        \"checking\": 20270828,\n        \"routing\":
+      35365127\n    },\n    {\n        \"name\": \"Leigh
+      Rohan\",\n        \"checking\": 90142633,\n        \"routing\":
+      00431026\n    },\n    {\n        \"name\": \"Melody
+      Ryan\",\n        \"checking\": 43478216,\n        \"routing\":
+      23899846\n    },\n    {\n        \"name\": \"Howard
+      Gorczany\",\n        \"checking\": 22511905,\n        \"routing\":
+      01385400\n    },\n    {\n        \"name\": \"Rudy
+      Hackett\",\n        \"checking\": 56305325,\n        \"routing\":
+      27537298\n    },\n    {\n        \"name\": \"Denise
+      Corkery\",\n        \"checking\": 90846626,\n        \"routing\":
+      84234984\n    }\n]"'
+order: 1000

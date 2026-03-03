@@ -1,0 +1,11 @@
+$kind: http-request
+url: "{{baseUrl}}/accounts/:accountNumber/statement/date"
+method: GET
+headers:
+  Accept: application/json; charset=utf-8
+pathVariables:
+  - key: accountNumber
+    value: do pariatur fugiat esse
+    description: "(Required) "
+examples: ./.resources/Date.resources/examples
+order: 2000
