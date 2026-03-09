@@ -1,0 +1,27 @@
+name: OAS Lint
+
+on:
+  pull_request: {}
+  workflow_dispatch: {}
+
+jobs:
+  oas-lint:
+    name: Spectral OWASP API security lint
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install Spectral CLI
+        run: npm install -g @stoplight/spectral-cli
+
+      - name: Run Spectral lint with OWASP API security ruleset
+        run: |
+          spectral lint openapi.yaml \
+            --ruleset https://raw.githubusercontent.com/stoplightio/spectral/main/rulesets/owasp-api-security.yaml
