@@ -6,7 +6,15 @@
   "main": "app/server.js",
   "scripts": {
     "start": "node app/server.js",
-    "dev": "NODE_ENV=development node app/server.js"
+    "dev": "NODE_ENV=development node app/server.js",
+    "test": "jest --runInBand --testEnvironment=node"
+  },
+  "devDependencies": {
+    "ajv": "^8.17.1",
+    "jest": "^29.7.0",
+    "jest-openapi": "^0.14.2",
+    "supertest": "^6.3.4",
+    "yaml": "^2.8.1"
   },
   "dependencies": {
     "cookie-parser": "1.4.7",
